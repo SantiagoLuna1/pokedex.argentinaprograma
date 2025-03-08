@@ -1,7 +1,11 @@
-module.exports = {
+export default {
   verbose: true,
-  rootDir: 'src',
-  coverageDirectory: '../coverage/',
-  testPathIgnorePatterns: ['/node_modules/', '.*fixture.js'],
-  coveragePathIgnorePatterns: ['/node_modules/', '.*fixture.js'],
+  testEnvironment: 'jest-environment-jsdom',
+  transform: {
+    '^.+\\.js$': 'babel-jest', 
+  },
+  transformIgnorePatterns: [
+    '/node_modules/', 
+  ],
+  moduleFileExtensions: ['js', 'mjs'],
 };

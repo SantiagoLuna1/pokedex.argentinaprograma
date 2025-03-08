@@ -4,7 +4,7 @@
 
 import { actualizarTextoAyuda } from './general.js';
 
-function mostrarTipos(tipos) {
+export function mostrarTipos(tipos) {
   const $tipos = document.querySelector('#tipos');
   $tipos.innerHTML = '';
 
@@ -16,7 +16,7 @@ function mostrarTipos(tipos) {
   });
 }
 
-function mostrarMovimientos(movimientos) {
+export function mostrarMovimientos(movimientos) {
   const $movimientos = document.querySelector('#movimientos');
 
   movimientos.forEach((movimiento) => {
@@ -41,7 +41,7 @@ function mostrarMovimientos(movimientos) {
   });
 }
 
-function mostrarHabilidades(habilidades) {
+export function mostrarHabilidades(habilidades) {
   const $habilidades = document.querySelector('#habilidades');
   $habilidades.innerHTML = '';
   habilidades.forEach((habilidad) => {

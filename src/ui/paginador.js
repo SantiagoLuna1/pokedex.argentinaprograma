@@ -1,4 +1,4 @@
-function crearItemPaginador(texto, url = '#') {
+export function crearItemPaginador(texto, url = '#') {
   const $item = document.createElement('li');
   const $link = document.createElement('a');
   $item.className = 'page-item';
@@ -26,7 +26,7 @@ export function manejarCambioPagina(e, callbackPaginaSeleccionada = () => {}) {
   }
 }
 
-export default function mostrarPaginador(
+export function mostrarPaginador(
   totalPokemones,
   paginaActual,
   urlSiguiente,
