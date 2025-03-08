@@ -7,6 +7,8 @@ describe('mostrarListadoPokemones', () => {
     beforeEach(() => {
         pokemonSeleccionadoCallback = jest.fn(); 
         nombresPokemones = ['Bulbasaur', 'Pikachu', 'Charmander'];
+
+        document.body.innerHTML = `<div id="indice"></div>`;
     });
 
     it('debe llamar a pokemonSeleccionadoCallback cuando se hace clic en un Pokémon', () => {
